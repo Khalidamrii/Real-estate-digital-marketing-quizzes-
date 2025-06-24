@@ -1,83 +1,0 @@
-
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <title>نموذج اختبار رقم 1</title>
-    <style>
-        body { font-family: Arial; direction: rtl; margin: 30px; }
-        h1, .timer, .result { text-align: center; }
-        .question { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
-        .correct { background-color: #d4edda; }
-        .incorrect { background-color: #f8d7da; }
-        .result-summary { margin-top: 40px; text-align: center; font-size: 20px; font-weight: bold; }
-        button { padding: 10px 20px; margin-top: 20px; display: block; margin-left: auto; margin-right: auto; }
-    </style>
-</head>
-<body>
-    <h1>نموذج اختبار رقم 1</h1>
-    <div class="timer">
-        ⏳ الوقت المتبقي: <span id="time">60:00</span>
-    </div>
-    <form id="quizForm">
-        <div class="question" id="q1"><p>1. ما أهمية تحسين محركات البحث؟</p><label><input type="radio" name="q1" value="A"> زيادة أسعار العقارات</label><br><label><input type="radio" name="q1" value="B"> تصدر نتائج البحث</label><br><label><input type="radio" name="q1" value="C"> تحسين الصور</label><br><label><input type="radio" name="q1" value="D"> تخفيض عدد العملاء</label><br></div><div class="question" id="q2"><p>2. أي مما يلي يُعد من مميزات التسويق العقاري الإلكتروني؟</p><label><input type="radio" name="q2" value="A"> ارتفاع التكاليف</label><br><label><input type="radio" name="q2" value="B"> الوصول المحدود</label><br><label><input type="radio" name="q2" value="C"> قياس النتائج بدقة</label><br><label><input type="radio" name="q2" value="D"> عدم التفاعل مع الجمهور</label><br></div><div class="question" id="q3"><p>3. أحد معايير ترخيص المنصات العقارية الإلكترونية هو:</p><label><input type="radio" name="q3" value="A"> عدم الإفصاح عن الأسعار</label><br><label><input type="radio" name="q3" value="B"> إخفاء بيانات المعلن</label><br><label><input type="radio" name="q3" value="C"> الشفافية والدقة</label><br><label><input type="radio" name="q3" value="D"> الترويج الكاذب</label><br></div><div class="question" id="q4"><p>4. أي من التالي يُعد من أنماط المحتوى الإلكتروني؟</p><label><input type="radio" name="q4" value="A"> الطباعة ثلاثية الأبعاد</label><br><label><input type="radio" name="q4" value="B"> الفيديو</label><br><label><input type="radio" name="q4" value="C"> الكتب الورقية</label><br><label><input type="radio" name="q4" value="D"> البث الإذاعي</label><br></div><div class="question" id="q5"><p>5. ما المقصود بالمزيج التسويقي؟</p><label><input type="radio" name="q5" value="A"> خطة مالية</label><br><label><input type="radio" name="q5" value="B"> تجميع من عناصر التسويق</label><br><label><input type="radio" name="q5" value="C"> سياسة العقود</label><br><label><input type="radio" name="q5" value="D"> منهجية تخطيط الموارد</label><br></div><div class="question" id="q6"><p>6. من مميزات التسويق العقاري الإلكتروني:</p><label><input type="radio" name="q6" value="A"> الوصول المحلي فقط</label><br><label><input type="radio" name="q6" value="B"> قياس الأداء بدقة</label><br><label><input type="radio" name="q6" value="C"> الاعتماد الكلي على الطباعة</label><br><label><input type="radio" name="q6" value="D"> التسويق الورقي</label><br></div><div class="question" id="q7"><p>7. ميزة التسويق عبر البريد الإلكتروني هي:</p><label><input type="radio" name="q7" value="A"> سهولة التوزيع</label><br><label><input type="radio" name="q7" value="B"> عدم التفاعل</label><br><label><input type="radio" name="q7" value="C"> تكلفة مرتفعة</label><br><label><input type="radio" name="q7" value="D"> تأخير الوصول</label><br></div><div class="question" id="q8"><p>8. من أدوات التسويق العقاري عبر الإنترنت:</p><label><input type="radio" name="q8" value="A"> الراديو</label><br><label><input type="radio" name="q8" value="B"> الصحف الورقية</label><br><label><input type="radio" name="q8" value="C"> محركات البحث</label><br><label><input type="radio" name="q8" value="D"> المجلات العقارية</label><br></div><div class="question" id="q9"><p>9. ما المقصود بالتسويق العقاري بالمحتوى؟</p><label><input type="radio" name="q9" value="A"> تسويق شفهي</label><br><label><input type="radio" name="q9" value="B"> عروض مباشرة</label><br><label><input type="radio" name="q9" value="C"> تقديم معلومات قيمة للعملاء</label><br><label><input type="radio" name="q9" value="D"> توزيع منشورات</label><br></div><div class="question" id="q10"><p>10. أي من التالي يعتبر من أنواع محتوى الفيديو؟</p><label><input type="radio" name="q10" value="A"> دليل الكيفية</label><br><label><input type="radio" name="q10" value="B"> إنفوجرافيك</label><br><label><input type="radio" name="q10" value="C"> Viral فيديو</label><br><label><input type="radio" name="q10" value="D"> قائمة المقالات</label><br></div><div class="question" id="q11"><p>11. من خصائص التسويق الإلكتروني:</p><label><input type="radio" name="q11" value="A"> لا يمكن قياس النتائج</label><br><label><input type="radio" name="q11" value="B"> غير متفاعل</label><br><label><input type="radio" name="q11" value="C"> مرن ويمكن تعديله</label><br><label><input type="radio" name="q11" value="D"> مرتفع التكاليف دائماً</label><br></div><div class="question" id="q12"><p>12. المحتوى النصي يشمل:</p><label><input type="radio" name="q12" value="A"> الكتب الورقية</label><br><label><input type="radio" name="q12" value="B"> المقالات والقوائم</label><br><label><input type="radio" name="q12" value="C"> مقاطع صوتية</label><br><label><input type="radio" name="q12" value="D"> صور ثلاثية الأبعاد</label><br></div><div class="question" id="q13"><p>13. أي من التالي يُعد هدفًا للتسويق الإلكتروني؟</p><label><input type="radio" name="q13" value="A"> تقليل عدد العملاء</label><br><label><input type="radio" name="q13" value="B"> حصر البيع في مكان واحد</label><br><label><input type="radio" name="q13" value="C"> تحديد الجمهور المستهدف</label><br><label><input type="radio" name="q13" value="D"> إلغاء الترويج</label><br></div><div class="question" id="q14"><p>14. أي مما يلي يُعد قناة من قنوات التسويق العقاري الإلكتروني؟</p><label><input type="radio" name="q14" value="A"> البريد التقليدي</label><br><label><input type="radio" name="q14" value="B"> المعارض فقط</label><br><label><input type="radio" name="q14" value="C"> مواقع التواصل الاجتماعي</label><br><label><input type="radio" name="q14" value="D"> الملصقات الورقية</label><br></div><div class="question" id="q15"><p>15. أي من التالي من مبادئ التسويق العقاري الإلكتروني؟</p><label><input type="radio" name="q15" value="A"> عدم تحليل الجمهور</label><br><label><input type="radio" name="q15" value="B"> التسويق العشوائي</label><br><label><input type="radio" name="q15" value="C"> فهم العميل</label><br><label><input type="radio" name="q15" value="D"> إهمال الميزانية</label><br></div><div class="question" id="q16"><p>16. محركات البحث ليست ذات أهمية في التسويق الإلكتروني.</p><label><input type="radio" name="q16" value="T"> صح</label><br><label><input type="radio" name="q16" value="F"> خطأ</label><br></div><div class="question" id="q17"><p>17. من مبادئ التسويق الإلكتروني التعرف على العميل بشكل أفضل.</p><label><input type="radio" name="q17" value="T"> صح</label><br><label><input type="radio" name="q17" value="F"> خطأ</label><br></div><div class="question" id="q18"><p>18. وسائل التواصل الاجتماعي غير فعالة في التسويق العقاري.</p><label><input type="radio" name="q18" value="T"> صح</label><br><label><input type="radio" name="q18" value="F"> خطأ</label><br></div><div class="question" id="q19"><p>19. الميزانية ليست ضرورية في خطة التسويق.</p><label><input type="radio" name="q19" value="T"> صح</label><br><label><input type="radio" name="q19" value="F"> خطأ</label><br></div><div class="question" id="q20"><p>20. العلامة التجارية تعزز من ثقة العملاء.</p><label><input type="radio" name="q20" value="T"> صح</label><br><label><input type="radio" name="q20" value="F"> خطأ</label><br></div>
-        <button type="button" onclick="submitQuiz()">تحقق من النتيجة</button>
-    </form>
-
-    <div class="result-summary" id="resultSummary" style="display:none;"></div>
-
-    <script>
-        const totalTime = 60 * 60;
-        let timeLeft = totalTime;
-
-        function updateTimer() {
-            const minutes = Math.floor(timeLeft / 60);
-            const seconds = timeLeft % 60;
-            document.getElementById('time').textContent = 
-                String(minutes).padStart(2, '0') + ":" + String(seconds).padStart(2, '0');
-            if (timeLeft > 0) {
-                timeLeft--;
-            } else {
-                clearInterval(timerInterval);
-                submitQuiz(true);
-            }
-        }
-
-        const timerInterval = setInterval(updateTimer, 1000);
-
-        function submitQuiz(auto = false) {
-            clearInterval(timerInterval);
-            let score = 0;
-            const total = 20;
-            const answers = ['B', 'C', 'C', 'B', 'B', 'B', 'A', 'C', 'C', 'C', 'C', 'B', 'C', 'C', 'C', 'F', 'T', 'F', 'F', 'T'];
-            for (let i = 1; i <= total; i++) {
-                const questionDiv = document.getElementById('q' + i);
-                const selected = document.querySelector('input[name="q' + i + '"]:checked');
-                if (selected) {
-                    if (selected.value === answers[i - 1]) {
-                        score++;
-                        questionDiv.classList.add("correct");
-                    } else {
-                        questionDiv.classList.add("incorrect");
-                    }
-                } else {
-                    questionDiv.classList.add("incorrect");
-                }
-            }
-            let summary = (auto ? "انتهى الوقت!<br>" : "") + "درجتك: " + score + " من " + total;
-            let message = "";
-            if (score >= 18) {
-                message = "🔥 ممتاز! أنت جاهز تمامًا.";
-            } else if (score >= 14) {
-                message = "✅ جيد جدًا، تابع المراجعة.";
-            } else if (score >= 10) {
-                message = "⚠️ تحتاج تراجع أكثر.";
-            } else {
-                message = "❌ حاول مرة أخرى، وراجع التلخيص.";
-            }
-            document.getElementById('resultSummary').innerHTML = summary + "<br>" + message;
-            document.getElementById('resultSummary').style.display = "block";
-        }
-    </script>
-</body>
-</html>
